@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
 
+/*--------------------------- 헤더------------------- */
 header{
   width: 1300px;
   /* border: 1px solid #000; */
@@ -18,9 +11,9 @@ header .logo{
 }
 header .logo img{
   width:200px
-
 }
 
+/* 메뉴 */
 nav{
   border: 1px solid #4d4d4d;
   height: 50px; 
@@ -42,6 +35,7 @@ nav ul li a{
   display: inline-block;
 }
 
+/*--------------- 메인비주얼 ------------------- */
 main{
   height: 700px;
   margin-top: 50px;
@@ -55,198 +49,154 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-@font-face {
-  font-family: 'KakaoBigSans-ExtraBold';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-}
-
-}
-@font-face {
-  font-family: 'KakaoSmallSans-Bold';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoSmallSans-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 
 main h2{
   font-family: 'KakaoBigSans-ExtraBold';
-    color: azure;
-    font-size: 80px;
-    font-weight: 800;
-  }
-
-h3{
-  font-family:'KakaoSmallSans-Bold';
-    color: #4d4d4d;
-    font-size: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-  }
-
-h4{
-  font-family:'KakaoSmallSans-Bold';
-    color: #4d4d4d;
-    font-size: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1200px;
-    margin-top: 100px;
-    font-weight: 400;
-    text-decoration: underline;
-  
-
+  color: azure;
+  font-size: 80px;
+  font-weight: 800;
 }
 
-  h5{
-    font-family:'GmarketSansMedium';
-    color: #4d4d4d;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1200px;
-    font-weight: 100;
-  }
-   
-p{
+
+/* ------------------------섹션---------------------- */
+/* 공통 */
+h3{
+  font-family:'KakaoSmallSans-Bold';
+  color: #4d4d4d;
+  font-size: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: auto;
-  margin: 100px;
-  font-size: 21px;
+  margin: 100px  0;
+}
+h4{
+  font-family:'KakaoSmallSans-Bold';
+  color: #4d4d4d;
+  font-size: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;   
+  font-weight: 400;
+  text-decoration: underline;
+}
+h5{
+  font-family:'GmarketSansMedium';
+  color: #4d4d4d;
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 30px;
+}
+p{ 
+  font-size: 18px;
   font-family:'S-CoreDream-3Light';
   font-weight: 50px;
 }
-  
-.s1-right img{
-  display:flex;
- justify-content: center;
 
+.section-inner{
+  /* border: 1px solid #000; */
+  width: 1300px;
+  margin: auto;
 }
 
 
 
-
-.s3-banner1{
-  height: 100vh;
+/* 섹션1--BRAND IDENTITY,VIBE THE NEW FLOW */
+.s1{
+  padding-bottom: 100px;
+}
+.s1-content{
   display: flex;
+  align-items: center;
 }
-.s3-banner1 li{
+.s1-left{
+  padding: 0 120px;
+  padding-bottom: 100px;
+  
+}
+.s1-right img{
+  width:500px ;
+  
+}
+
+
+/*--------- 섹션2 ARTIST 배너 */
+.gallery{
+  height: 70vh;
+  display: flex;
+  
+}
+.gallery li{
   flex: 1;
   position: relative;
   height: 100%;
-  transition: 0.5s;
+  transition: 0.8s;
   overflow: hidden;
+  
 }
-.s3-banner1 li:before{
+.gallery li:before{
   content: attr(data-text);
   position: absolute;
   top: -100px;
   left: 0;
   z-index: 1;
-  background-color: crimson;
+  background-color: rgb(26, 95, 116);
   color: #fff;
   font-size: 15px;
   padding: 5px 10px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
-.s3-banner1 li img{
+.gallery li img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* img태그는 inline-block요소로 기본적인 마진이 존재함 */
+  display: block; 
 }
-.s3-banner1 li .content{
+.gallery li .content{
   position: absolute;
   bottom: -100%;
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 250px;
-  background-color: #709c17;
+  height: 350px;
+  background-color: rgb(26,95,116);
   font-size: 15px;
   color: #fff;
   padding: 30px;
   text-align: center;
   transition: 0.5s;
 }
-.gallery li .content:before{  /* 삼각형 */
+.gallery li .content:before{  
   content: '';
   position: absolute;
   top: 0;
   left: 50%;
   width: 25px;
   height: 25px;
-  background-color: #709c17;
+  background-color: rgb(26,95,116);
   transform: rotate(45deg) translateX(-50%)
 }
 .gallery li .content h2{
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 26px;
 }
 .gallery li .content p{
   margin: 20px 0;
-  line-height: 20px;
+  line-height: 26px;
 }
 .gallery li .content a{
   display: inline-block;
   border: 1px solid #fff;
   border-radius: 30px;
   padding: 5px 20px;
-	font-size: 13px;
+	font-size: 20px;
 	text-transform: uppercase;
   margin-top: 20px;
 }
 
-/* 처음에 보이는 화면 */
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255,255,255,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.overlay h3 {
-	font-size: 52px;
-  text-transform: capitalize;
-	line-height: 50px;
-	color: crimson;
-	text-align: center;
-}
-.overlay h3 span {
-	display: block;
-	font-weight: normal;
-	font-size: 30px;
-	color: #000;
-}
 
 /* Hover Effect */
 .gallery:hover li{flex: 1;}
@@ -254,10 +204,154 @@ p{
 .gallery li:hover img{filter: grayscale();}
 .gallery li:hover .content{
   bottom: 0;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 .gallery li:hover:before{
   top: 0;
   transition-delay: 1s;
 }
 .container:hover .overlay{display: none;}
+/*------ ARTIST 배너 삽입 끝------ */
+/* -----ACTOR 배너삽입-------- */
+
+
+/* ---연기자배너 흘러가는속성---- */
+@keyframes title-ani{
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-100%);}
+}
+/* -- 연기자이름 흘러가는 애니속성 */
+.title-text{
+  border: 1px solid #e0e0e0;
+  padding: 20PX;
+  width: 1300px;
+  display: flex;
+  white-space: nowrap;  /* 텍스트가 가로로 나열되면서 밑으로 떨어지는것을 막기 위함 */
+  font-size: 22px;
+  font-weight: 300;
+  color: rgb(26,95,116);
+  overflow: hidden; 
+  border-radius: 35px;
+  /* --연기자이름 흘러가는 애니속성--- */
+}
+.title-text .title-wrap{
+  animation: title-ani 12S linear infinite;
+}
+.title-text:hover .title-wrap{
+  animation-play-state: inherit;
+  color: #b34c23;
+  cursor: pointer;
+}
+
+
+/* (2) */
+@keyframes row1-ani{  /* 왼쪽으로 흘러감 */
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-30%);}
+}
+@keyframes row2-ani{  /* 오른쪽으로 흘러감 */
+  0%{transform: translateX(0);}
+  100%{transform: translateX(70%);}
+}
+
+.banner-slide{
+  /* border: 5px solid #000; */
+  width: 1300px;
+  margin: 100px auto 10px;
+  overflow: hidden;
+}
+.banner-slide .row{
+  position: relative;
+  width: inherit;
+  height: 500px;
+}
+.banner-slide .row .row-inner{
+  display: flex;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.banner-slide .row1 .row-inner{
+  left: 0;
+  animation: row1-ani 20s linear infinite alternate;
+}
+.banner-slide .row2 .row-inner{
+  right: 0;
+  animation: row2-ani 20s linear infinite alternate;
+}
+.banner-slide:hover .row-inner {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.banner-slide .row2{  /* 구분선 */
+  border-top: 3px solid #ffffff;
+}
+.banner-slide .row:before,
+.banner-slide .row:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 250px;
+  height: 500px;
+  z-index: 2;
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+.banner-slide .row:before{left: 0;}
+.banner-slide .row:after{
+  right: 0;
+  transform: rotateY(180deg);
+}
+
+/* 섹션4 */
+
+.s4-content{
+  display: flex;
+  
+}
+.s4-left{
+  flex: 1;
+  margin-top: 50px;
+  padding: 20px 0px;
+}
+.s4-right{
+  flex: 1;
+}
+#s4 .section-inner .s4-content:nth-of-type(2){
+  flex-direction: row-reverse;
+}
+
+.s4-right img{
+  width: 100%;
+  height:495px;
+  object-fit: cover;
+}
+
+.foot-menu{
+ background-color: #333;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: #c4c4c4;
+    font-size: 13px;
+  }
+  .address{
+    font-style: normal; /*address태그에 기본적으로 적용되는 기울임 해지*/
+    color: #c4c4c4;
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 11px;
+    
+  }
+
+
+
+
+
